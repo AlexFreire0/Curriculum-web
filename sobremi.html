@@ -6,14 +6,18 @@
   <title>Sobre mí</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-cyan-200 to-green-700  min-h-screen font-sans p-6">
+<body class="bg-gradient-to-br from-gray-200 to-gray-700  min-h-screen font-sans p-6">
 
   <!-- Botón volver -->
   <a href="index.html" class="text-pink-700 font-semibold hover:underline">← Volver al inicio</a>
 
   <!-- Encabezado -->
   <section class="text-center mt-8 mb-10">
-    <img src="https://i.pinimg.com/564x/5d/26/d3/5d26d3d8ed16cc06ffb0cc0fa8d239de.jpg" alt="Foto de perfil" class="w-40 h-40 mx-auto rounded-full shadow-lg border-4 border-white">
+    <!-- reemplazado: imagen ahora responsiva y con object-cover para evitar deformaciones -->
+    <div class="mx-auto w-40 h-40 md:w-60 md:h-60 rounded-full p-1 bg-white/10 shadow-inner flex items-center justify-center">
+      <img src="img/AlexPhoto.jpg" alt="Foto de Alex Freire Barriga" loading="lazy"
+           class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white">
+    </div>
     <h1 class="text-5xl font-extrabold text-gray-800 mt-4">Alex Freire Barriga</h1>
     <p class="text-gray-600 text-lg mt-2">Desarrollador Web | Apasionado por la Tecnología</p>
   </section>
@@ -49,17 +53,17 @@
           </tr>
           <tr>
             <td class="p-3 font-medium">Bases de datos</td>
-            <td class="p-3">MySQL, Oracle, MongoDB</td>
+            <td class="p-3">MySQL, Oracle, MongoDB y Node</td>
             <td class="p-3">Intermedio</td>
           </tr>
           <tr>
             <td class="p-3 font-medium">Herramientas</td>
-            <td class="p-3">Git, Visual Studio Code, Eclipse, IntelliJ IDEA</td>
+            <td class="p-3">Git, Visual Studio Code, Eclipse, IntelliJ IDEA, Android Studio</td>
             <td class="p-3">Avanzado</td>
           </tr>
           <tr>
             <td class="p-3 font-medium">Diseño</td>
-            <td class="p-3">TailwindCSS, Figma básico</td>
+            <td class="p-3">TailwindCSS, Figma básico, Boostrap, CSS Intermedio</td>
             <td class="p-3">Básico</td>
           </tr>
         </tbody>
@@ -73,10 +77,10 @@
     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-lg">
       <li>🎧 Escuchar música</li>
       <li>🎮 Jugar videojuegos</li>
-      <li>💪 Ir al gimnasio</li>
+      <li>💪 Hacer deporte</li>
       <li>🎬 Ver series y películas</li>
       <li>💻 Aprender nuevas tecnologías</li>
-      <li>🧑‍🍳 Cocinar y probar comidas nuevas</li>
+      <li></li>
     </ul>
   </div>
 
