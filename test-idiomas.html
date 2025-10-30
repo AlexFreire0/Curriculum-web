@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Idiomas</title>
+  <script src="language-switcher.js"></script>
+</head>
+<body>
+  <h1>Test de Cambio de Idiomas</h1>
+  
+  <button id="language-toggle" onclick="toggleLanguage()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; display: flex; align-items: center;"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ec-1f1e7.svg" alt="English" style="width: 24px; height: 24px; margin-right: 8px;"> English</button>
+  
+  <div style="margin-top: 20px; padding: 20px; border: 1px solid #ccc;">
+    <h2 data-i18n="index.heading">Alex Freire — Currículum Vitae</h2>
+    <p data-i18n="index.description">Descubre mi experiencia, formación y más</p>
+    <p data-i18n="contacto.heading">📞 Contacto</p>
+    <p data-i18n="sobremi.aboutText">Soy un joven desarrollador apasionado por la tecnología...</p>
+  </div>
+  
+  <p style="margin-top: 20px; color: #999;">
+    Idioma actual: <span id="current-lang">es</span><br>
+    Abre la consola del navegador para ver mensajes de depuración.
+  </p>
+  
+  <script>
+    // Actualizar el idioma actual en la página
+    setInterval(() => {
+      document.getElementById('current-lang').textContent = currentLanguage;
+    }, 100);
+  </script>
+</body>
+</html>

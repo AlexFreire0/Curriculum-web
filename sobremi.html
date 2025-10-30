@@ -24,10 +24,14 @@
   }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="language-switcher.js"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-200 to-gray-700  min-h-screen font-sans p-6">
 
-  <a href="index.html" class="text-pink-700 font-semibold hover:underline">← Volver al inicio</a>
+  <div class="flex justify-between items-center mb-4">
+    <a href="index.html" class="text-pink-700 font-semibold hover:underline" data-i18n="common.backToHome">← Volver al inicio</a>
+    <button id="language-toggle" onclick="toggleLanguage()" class="bg-white/30 hover:bg-white/50 text-pink-700 font-semibold py-1 px-3 rounded-lg transition text-sm flex items-center gap-2"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ec-1f1e7.svg" alt="English" style="width: 20px; height: 20px;"> English</button>
+  </div>
 
   <section class="text-center mt-8 mb-10">
     <div class="mx-auto w-40 h-40 md:w-60 md:h-60 rounded-full p-1 bg-white/10 shadow-inner flex items-center justify-center">
@@ -35,12 +39,12 @@
            class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white">
     </div>
     <h1 class="text-5xl font-extrabold text-gray-800 mt-4">Alex Freire Barriga</h1>
-    <p class="text-gray-600 text-lg mt-2">Desarrollador web | Apasionado por la tecnología</p>
+    <p class="text-gray-600 text-lg mt-2" data-i18n="sobremi.jobTitle">Desarrollador web | Apasionado por la tecnología</p>
   </section>
 
   <div class="max-w-4xl mx-auto bg-white/80 shadow-md rounded-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-pink-700 mb-4">🙋 Sobre mí</h2>
-    <p class="text-gray-700 text-lg leading-relaxed">
+    <h2 class="text-3xl font-semibold text-pink-700 mb-4" data-i18n="sobremi.aboutTitle">🙋 Sobre mí</h2>
+    <p class="text-gray-700 text-lg leading-relaxed" data-i18n="sobremi.aboutText">
       Soy un joven desarrollador apasionado por la tecnología, la programación y la creatividad.
       Me gusta enfrentar nuevos retos y aprender constantemente cosas nuevas.
       Disfruto trabajar en proyectos donde pueda aportar ideas, mejorar procesos y crear soluciones útiles.
@@ -49,36 +53,36 @@
   </div>
 
   <div class="max-w-4xl mx-auto bg-white/80 shadow-md rounded-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-pink-700 mb-4">💻 Habilidades</h2>
+    <h2 class="text-3xl font-semibold text-pink-700 mb-4" data-i18n="sobremi.skillsTitle">💻 Habilidades</h2>
     <div class="overflow-x-auto">
       <table class="w-full border-collapse text-left">
         <thead>
           <tr class="bg-cyan-200 text-gray-800">
-            <th class="p-3">Categoría</th>
-            <th class="p-3">Habilidades</th>
-            <th class="p-3">Nivel</th>
+            <th class="p-3" data-i18n="sobremi.category">Categoría</th>
+            <th class="p-3" data-i18n="sobremi.skills">Habilidades</th>
+            <th class="p-3" data-i18n="sobremi.level">Nivel</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-pink-100">
           <tr>
-            <td class="p-3 font-medium">Programación</td>
-            <td class="p-3">Python, PHP, Java, HTML, CSS, JavaScript, SQL, .NET</td>
-            <td class="p-3">Intermedio</td>
+            <td class="p-3 font-medium" data-i18n="sobremi.programming">Programación</td>
+            <td class="p-3" data-i18n="sobremi.programmingSkills">Python, PHP, Java, HTML, CSS, JavaScript, SQL, .NET</td>
+            <td class="p-3" data-i18n="sobremi.programmingLevel">Intermedio</td>
           </tr>
           <tr>
-            <td class="p-3 font-medium">Bases de datos</td>
-            <td class="p-3">MySQL, PostgreSQL, Oracle y MongoDB</td>
-            <td class="p-3">Intermedio</td>
+            <td class="p-3 font-medium" data-i18n="sobremi.databases">Bases de datos</td>
+            <td class="p-3" data-i18n="sobremi.databasesSkills">MySQL, PostgreSQL, Oracle y MongoDB</td>
+            <td class="p-3" data-i18n="sobremi.databasesLevel">Intermedio</td>
           </tr>
           <tr>
-            <td class="p-3 font-medium">Herramientas</td>
-            <td class="p-3">Git, Visual Studio Code, Eclipse, IntelliJ IDEA, Android Studio</td>
-            <td class="p-3">Avanzado</td>
+            <td class="p-3 font-medium" data-i18n="sobremi.tools">Herramientas</td>
+            <td class="p-3" data-i18n="sobremi.toolsSkills">Git, Visual Studio Code, Eclipse, IntelliJ IDEA, Android Studio</td>
+            <td class="p-3" data-i18n="sobremi.toolsLevel">Avanzado</td>
           </tr>
           <tr>
-            <td class="p-3 font-medium">Diseño</td>
-            <td class="p-3">Tailwind CSS, Figma (básico), Bootstrap, CSS (intermedio)</td>
-            <td class="p-3">Básico</td>
+            <td class="p-3 font-medium" data-i18n="sobremi.design">Diseño</td>
+            <td class="p-3" data-i18n="sobremi.designSkills">Tailwind CSS, Figma (básico), Bootstrap, CSS (intermedio)</td>
+            <td class="p-3" data-i18n="sobremi.designLevel">Básico</td>
           </tr>
         </tbody>
       </table>
@@ -86,19 +90,19 @@
   </div>
 
   <div class="max-w-4xl mx-auto bg-white/80 shadow-md rounded-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-pink-700 mb-4">🎮 Hobbies</h2>
+    <h2 class="text-3xl font-semibold text-pink-700 mb-4" data-i18n="sobremi.hobbiesTitle">🎮 Hobbies</h2>
     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-lg">
-      <li>🎧 Escuchar música</li>
-      <li>🎮 Jugar videojuegos</li>
-      <li>💪 Hacer deporte</li>
-      <li>🎬 Ver series y películas</li>
-      <li>💻 Aprender nuevas tecnologías</li>
+      <li data-i18n="sobremi.hobby1">🎧 Escuchar música</li>
+      <li data-i18n="sobremi.hobby2">🎮 Jugar videojuegos</li>
+      <li data-i18n="sobremi.hobby3">💪 Hacer deporte</li>
+      <li data-i18n="sobremi.hobby4">🎬 Ver series y películas</li>
+      <li data-i18n="sobremi.hobby5">💻 Aprender nuevas tecnologías</li>
     </ul>
   </div>
 
   <div class="max-w-4xl mx-auto bg-white/80 shadow-md rounded-2xl p-8 mb-16">
-    <h2 class="text-3xl font-semibold text-pink-700 mb-4">🤝 Trabajo en equipo</h2>
-    <p class="text-gray-700 text-lg leading-relaxed">
+    <h2 class="text-3xl font-semibold text-pink-700 mb-4" data-i18n="sobremi.teamworkTitle">🤝 Trabajo en equipo</h2>
+    <p class="text-gray-700 text-lg leading-relaxed" data-i18n="sobremi.teamworkText">
       Me considero una persona colaborativa y empática, que valora la comunicación y el respeto dentro de un equipo.
       Disfruto trabajar con otros compañeros, compartir ideas y aportar soluciones conjuntas.
       Creo firmemente que un buen ambiente y la cooperación son la base para lograr grandes resultados.
@@ -106,7 +110,7 @@
   </div>
 
   <footer class="text-center text-gray-600 text-sm mb-4">
-    <b>© 2025 Mi currículum Alex Freire Barriga</b>
+    <b data-i18n="common.footer">© 2025 Mi currículum Alex Freire Barriga</b>
   </footer>
 
 </body>

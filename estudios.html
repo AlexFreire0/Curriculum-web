@@ -13,10 +13,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexfreire0.github.io/Curriculum-web/estudios.html" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="language-switcher.js"></script>
 </head>
 <body class="bg-gradient-to-br  from-pink-200 to-purple-700 min-h-screen font-sans p-8">
-  <a href="index.html" class="text-purple-700 font-semibold hover:underline">← Volver al inicio</a>
-  <h1 class="text-4xl font-bold text-gray-800 mt-6 mb-8">🎓 Estudios</h1>
+  <div class="flex justify-between items-center mb-4">
+    <a href="index.html" class="text-purple-700 font-semibold hover:underline" data-i18n="common.backToHome">← Volver al inicio</a>
+    <button id="language-toggle" onclick="toggleLanguage()" class="bg-white/30 hover:bg-white/50 text-purple-700 font-semibold py-1 px-3 rounded-lg transition text-sm flex items-center gap-2"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ec-1f1e7.svg" alt="English" style="width: 20px; height: 20px;"> English</button>
+  </div>
+  <h1 class="text-4xl font-bold text-gray-800 mt-6 mb-8" data-i18n="estudios.heading">🎓 Estudios</h1>
 
 
   
@@ -32,41 +36,41 @@
             <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 2L3 5v6c0 5 3.7 9.7 9 11 5.3-1.3 9-6 9-11V5l-9-3zM11 14.5l-3.5-3.5L9 9l2 2 4-4 1.5 1.5L11 14.5z"/>
             </svg>
-            B2 Inglés
+            <span data-i18n="estudios.english">B2 Inglés</span>
           </h2>
-          <p class="text-gray-600 text-sm mt-1">2024 <span class="font-bold">Cambridge</span></p>
+          <p class="text-gray-600 text-sm mt-1"><span data-i18n="estudios.englishYear">2024</span> <span class="font-bold" data-i18n="estudios.englishCertificate">Cambridge</span></p>
         </div>
-        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-500 text-white">Certificado</span>
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-500 text-white" data-i18n="estudios.certified">Certificado</span>
       </div>
-      <p class="mt-3 text-gray-700">Nivel B2 en inglés certificado por Cambridge.</p>
+      <p class="mt-3 text-gray-700" data-i18n="estudios.englishDesc">Nivel B2 en inglés certificado por Cambridge.</p>
     </div>
 
 
     <div class="bg-white shadow-md rounded-2xl p-6">
-      <h2 class="text-2xl font-semibold text-purple-700">CFGS Desarrollo de Aplicaciones Multiplataforma</h2>
-      <p class="text-gray-600 text-sm mb-2">2024 - 2026 <b>(CampusFP)</b></p>
-      <p class="text-gray-700">Formación en programación, bases de datos, aplicaciones web y móviles, y aprendizaje en Unity.</p>
+      <h2 class="text-2xl font-semibold text-purple-700" data-i18n="estudios.cfgs">CFGS Desarrollo de Aplicaciones Multiplataforma</h2>
+      <p class="text-gray-600 text-sm mb-2"><span data-i18n="estudios.cfgsYear">2024 - 2026</span> <b data-i18n="estudios.cfgsSchool">CampusFP</b></p>
+      <p class="text-gray-700" data-i18n="estudios.cfgsDesc">Formación en programación, bases de datos, aplicaciones web y móviles, y aprendizaje en Unity.</p>
     </div>
 
     <div class="bg-white shadow-md rounded-2xl p-6">
-      <h2 class="text-2xl font-semibold text-purple-700">CFGM Sistemas Microinformáticos y Redes</h2>
-      <p class="text-gray-600 text-sm mb-2">2022 - 2024 <b>IES Tierno Galván</b></p>
-      <p class="text-gray-700">Formación en programación, sistemas informáticos, redes y seguridad.</p>
+      <h2 class="text-2xl font-semibold text-purple-700" data-i18n="estudios.cfgm">CFGM Sistemas Microinformáticos y Redes</h2>
+      <p class="text-gray-600 text-sm mb-2"><span data-i18n="estudios.cfgmYear">2022 - 2024</span> <b data-i18n="estudios.cfgmSchool">IES Tierno Galván</b></p>
+      <p class="text-gray-700" data-i18n="estudios.cfgmDesc">Formación en programación, sistemas informáticos, redes y seguridad.</p>
     </div>
 
 
     <div class="bg-white shadow-md rounded-2xl p-6">
       <details class="mt-4 bg-purple-50 p-4 rounded-lg border border-purple-100">
-        <summary class="cursor-pointer font-medium text-purple-700">Formación adicional ▾</summary>
+        <summary class="cursor-pointer font-medium text-purple-700" data-i18n="estudios.additionalCourses">Formación adicional ▾</summary>
         <ul class="mt-3 list-disc list-inside text-gray-700 space-y-1">
-          <li>Google Cloud — Introduction to Generative AI</li>
-          <li>Educación Secundaria Obligatoria (ESO)</li>
+          <li data-i18n="estudios.course1">Google Cloud — Introduction to Generative AI</li>
+          <li data-i18n="estudios.course2">Educación Secundaria Obligatoria (ESO)</li>
         </ul>
       </details>
     </div>
   </section>
 
-  <footer class="mt-10 text-slate-300 text-sm font-bold">
+  <footer class="mt-10 text-slate-300 text-sm font-bold" data-i18n="common.footer">
     © 2025 Mi currículum Alex Freire Barriga
   </footer>
 </body>
